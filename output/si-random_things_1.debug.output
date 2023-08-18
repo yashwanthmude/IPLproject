@@ -1,0 +1,165 @@
+Starting parse
+Entering state 0
+Reading a token: Next token is token STRUCT (1.1-6: )
+Shifting token STRUCT (1.1-6: )
+Entering state 4
+Reading a token: Next token is token IDENTIFIER (1.8-10: abc)
+Shifting token IDENTIFIER (1.8-10: abc)
+Entering state 9
+Reading a token: Next token is token '{' (1.12: )
+Reducing stack by rule 5 (line 138):
+-> $$ = nterm $@1 (1.11: )
+Stack now 9 4 0
+Entering state 15
+Next token is token '{' (1.12: )
+Shifting token '{' (1.12: )
+Entering state 18
+Reading a token: Next token is token INT (2.5-7: )
+Shifting token INT (2.5-7: )
+Entering state 2
+Reducing stack by rule 10 (line 228):
+   $1 = token INT (2.5-7: )
+-> $$ = nterm type_specifier (2.5-7: )
+Stack now 18 15 9 4 0
+Entering state 26
+Reading a token: Next token is token IDENTIFIER (2.9-11: _qw)
+Shifting token IDENTIFIER (2.9-11: _qw)
+Entering state 30
+Reducing stack by rule 18 (line 275):
+   $1 = token IDENTIFIER (2.9-11: _qw)
+-> $$ = nterm declarator_arr (2.9-11: )
+Stack now 26 18 15 9 4 0
+Entering state 32
+Reading a token: Next token is token ',' (2.12: )
+Reducing stack by rule 20 (line 294):
+   $1 = nterm declarator_arr (2.9-11: )
+-> $$ = nterm declarator (2.9-11: )
+Stack now 26 18 15 9 4 0
+Entering state 64
+Reducing stack by rule 25 (line 414):
+   $1 = nterm declarator (2.9-11: )
+-> $$ = nterm declarator_list (2.9-11: )
+Stack now 26 18 15 9 4 0
+Entering state 65
+Next token is token ',' (2.12: )
+Shifting token ',' (2.12: )
+Entering state 96
+Reading a token: Next token is token IDENTIFIER (2.14-15: qw)
+Shifting token IDENTIFIER (2.14-15: qw)
+Entering state 30
+Reducing stack by rule 18 (line 275):
+   $1 = token IDENTIFIER (2.14-15: qw)
+-> $$ = nterm declarator_arr (2.14-15: )
+Stack now 96 65 26 18 15 9 4 0
+Entering state 32
+Reading a token: Next token is token ';' (2.16: )
+Reducing stack by rule 20 (line 294):
+   $1 = nterm declarator_arr (2.14-15: )
+-> $$ = nterm declarator (2.14-15: )
+Stack now 96 65 26 18 15 9 4 0
+Entering state 127
+Reducing stack by rule 26 (line 418):
+   $1 = nterm declarator_list (2.9-11: )
+   $2 = token ',' (2.12: )
+   $3 = nterm declarator (2.14-15: )
+-> $$ = nterm declarator_list (2.9-15: )
+Stack now 26 18 15 9 4 0
+Entering state 65
+Next token is token ';' (2.16: )
+Shifting token ';' (2.16: )
+Entering state 97
+Reducing stack by rule 24 (line 408):
+   $1 = nterm type_specifier (2.5-7: )
+   $2 = nterm declarator_list (2.9-15: )
+   $3 = token ';' (2.16: )
+-> $$ = nterm declaration (2.5-16: )
+Stack now 18 15 9 4 0
+Entering state 27
+Reducing stack by rule 22 (line 304):
+   $1 = nterm declaration (2.5-16: )
+-> $$ = nterm declaration_list (2.5-16: )
+Stack now 18 15 9 4 0
+Entering state 28
+Reading a token: Next token is token FLOAT (3.5-9: )
+Shifting token FLOAT (3.5-9: )
+Entering state 3
+Reducing stack by rule 11 (line 231):
+   $1 = token FLOAT (3.5-9: )
+-> $$ = nterm type_specifier (3.5-9: )
+Stack now 28 18 15 9 4 0
+Entering state 26
+Reading a token: Next token is token IDENTIFIER (3.11-14: __er)
+Shifting token IDENTIFIER (3.11-14: __er)
+Entering state 30
+Reducing stack by rule 18 (line 275):
+   $1 = token IDENTIFIER (3.11-14: __er)
+-> $$ = nterm declarator_arr (3.11-14: )
+Stack now 26 28 18 15 9 4 0
+Entering state 32
+Reading a token: Next token is token ';' (3.15: )
+Reducing stack by rule 20 (line 294):
+   $1 = nterm declarator_arr (3.11-14: )
+-> $$ = nterm declarator (3.11-14: )
+Stack now 26 28 18 15 9 4 0
+Entering state 64
+Reducing stack by rule 25 (line 414):
+   $1 = nterm declarator (3.11-14: )
+-> $$ = nterm declarator_list (3.11-14: )
+Stack now 26 28 18 15 9 4 0
+Entering state 65
+Next token is token ';' (3.15: )
+Shifting token ';' (3.15: )
+Entering state 97
+Reducing stack by rule 24 (line 408):
+   $1 = nterm type_specifier (3.5-9: )
+   $2 = nterm declarator_list (3.11-14: )
+   $3 = token ';' (3.15: )
+-> $$ = nterm declaration (3.5-15: )
+Stack now 28 18 15 9 4 0
+Entering state 67
+Reducing stack by rule 23 (line 356):
+   $1 = nterm declaration_list (2.5-16: )
+   $2 = nterm declaration (3.5-15: )
+-> $$ = nterm declaration_list (2.5-3.15: )
+Stack now 18 15 9 4 0
+Entering state 28
+Reading a token: Next token is token VOID (4.5-8: )
+Shifting token VOID (4.5-8: )
+Entering state 1
+Reducing stack by rule 9 (line 225):
+   $1 = token VOID (4.5-8: )
+-> $$ = nterm type_specifier (4.5-8: )
+Stack now 28 18 15 9 4 0
+Entering state 26
+Reading a token: Next token is token IDENTIFIER (4.10-12: ntg)
+Shifting token IDENTIFIER (4.10-12: ntg)
+Entering state 30
+Reducing stack by rule 18 (line 275):
+   $1 = token IDENTIFIER (4.10-12: ntg)
+-> $$ = nterm declarator_arr (4.10-12: )
+Stack now 26 28 18 15 9 4 0
+Entering state 32
+Reading a token: Next token is token ';' (4.13: )
+Reducing stack by rule 20 (line 294):
+   $1 = nterm declarator_arr (4.10-12: )
+-> $$ = nterm declarator (4.10-12: )
+Stack now 26 28 18 15 9 4 0
+Entering state 64
+Reducing stack by rule 25 (line 414):
+   $1 = nterm declarator (4.10-12: )
+-> $$ = nterm declarator_list (4.10-12: )
+Stack now 26 28 18 15 9 4 0
+Entering state 65
+Next token is token ';' (4.13: )
+Shifting token ';' (4.13: )
+Entering state 97
+Reducing stack by rule 24 (line 408):
+   $1 = nterm type_specifier (4.5-8: )
+   $2 = nterm declarator_list (4.10-12: )
+   $3 = token ';' (4.13: )
+-> $$ = nterm declaration (4.5-13: )
+Stack now 28 18 15 9 4 0
+Entering state 67
+Reducing stack by rule 23 (line 356):
+   $1 = nterm declaration_list (2.5-3.15: )
+   $2 = nterm declaration (4.5-13: )

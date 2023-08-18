@@ -1,0 +1,201 @@
+{"globalST": 
+[[         "f",         "fun",         "global",       0,       0,"struct s"
+],
+[         "g",         "fun",         "global",       0,       0,"void"
+],
+[         "h",         "fun",         "global",       0,       0,"int"
+],
+[         "main",         "fun",         "global",       0,       0,"int"
+],
+[         "struct s",         "struct",         "global",       4,     "-","-"
+]
+]
+,
+  "structs": [
+{
+"name": "struct s",
+"localST": 
+[
+["x",         "var",         "local",       4,       0,"int*"
+]
+]
+}
+],
+  "functions": [
+{
+"name": "f",
+"localST": 
+[
+["a",         "var",         "param",       4,      12,"int"
+]
+,
+["arr",         "var",         "local",      40,     -44,"int[10]"
+]
+,
+["b",         "var",         "local",       4,      -4,"struct s"
+]
+]
+,
+"ast": 
+{
+"seq": [
+
+]
+}
+}
+,
+{
+"name": "g",
+"localST": 
+[
+["a",         "var",         "local",       4,      -4,"struct s"
+]
+,
+["b",         "var",         "local",       4,      -8,"int*"
+]
+,
+["c",         "var",         "local",       4,     -12,"int"
+]
+]
+,
+"ast": 
+{
+"seq": [
+{ "assignS": {
+"left": 
+{ "op_unary": {
+"op": "DEREF"
+,
+"child": 
+{ "member": {
+"struct": 
+{ "funcall": {
+"fname": 
+{
+"identifier": "f"
+}
+,
+"params": [
+{
+"intconst": 1}
+
+
+]
+}
+}
+,
+"field": 
+{
+"identifier": "x"
+}
+}
+}
+}
+}
+,
+"right": 
+{
+"identifier": "c"
+}
+}
+}
+,
+{ "proccall": {
+"fname": 
+{
+"identifier": "h"
+}
+,
+"params": [
+{
+"intconst": 0}
+
+
+]
+}
+}
+
+
+]
+}
+}
+,
+{
+"name": "h",
+"localST": 
+[
+["a",         "var",         "param",       4,      12,"int*"
+]
+]
+,
+"ast": 
+{
+"seq": [
+
+]
+}
+}
+,
+{
+"name": "main",
+"localST": 
+[
+["a",         "var",         "local",       4,      -4,"int*"
+]
+,
+["b",         "var",         "local",       4,      -8,"int*"
+]
+,
+["c",         "var",         "local",       4,     -12,"float"
+]
+,
+["d",         "var",         "local",       4,     -16,"int"
+]
+]
+,
+"ast": 
+{
+"seq": [
+{ "assignS": {
+"left": 
+{
+"identifier": "d"
+}
+,
+"right": 
+{ "op_unary": {
+"op": "TO_INT"
+,
+"child": 
+{ "op_unary": {
+"op": "UMINUS"
+,
+"child": 
+{
+"identifier": "c"
+}
+}
+}
+}
+}
+}
+}
+,
+{ "assignS": {
+"left": 
+{
+"identifier": "a"
+}
+,
+"right": 
+{
+"intconst": 0}
+}
+}
+
+
+]
+}
+}
+]
+}

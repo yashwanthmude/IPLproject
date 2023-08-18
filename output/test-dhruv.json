@@ -1,0 +1,49 @@
+{"globalST": 
+[[         "main",         "fun",         "global",       0,       0,"int"
+]
+]
+,
+  "structs": [
+],
+  "functions": [
+{
+"name": "main",
+"localST": 
+[
+["a",         "var",         "local",       0,       0,"int[0]"
+]
+,
+["b",         "var",         "local",       4,      -4,"int"
+]
+]
+,
+"ast": 
+{
+"seq": [
+{ "assignS": {
+"left": 
+{
+"identifier": "b"
+}
+,
+"right": 
+{ "arrayref": {
+"array": 
+{
+"identifier": "a"
+}
+,
+"index": 
+{
+"intconst": 0}
+}
+}
+}
+}
+
+
+]
+}
+}
+]
+}

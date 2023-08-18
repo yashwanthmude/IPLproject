@@ -1,0 +1,60 @@
+Starting parse
+Entering state 0
+Reading a token: Next token is token INT (1.1-3: )
+Shifting token INT (1.1-3: )
+Entering state 2
+Reducing stack by rule 10 (line 228):
+   $1 = token INT (1.1-3: )
+-> $$ = nterm type_specifier (1.1-3: )
+Stack now 0
+Entering state 8
+Reading a token: Next token is token IDENTIFIER (1.5-8: main)
+Shifting token IDENTIFIER (1.5-8: main)
+Entering state 13
+Reading a token: Next token is token '(' (1.9: )
+Shifting token '(' (1.9: )
+Entering state 16
+Reading a token: Next token is token ')' (1.10: )
+Shifting token ')' (1.10: )
+Entering state 20
+Reducing stack by rule 14 (line 244):
+   $1 = token IDENTIFIER (1.5-8: main)
+   $2 = token '(' (1.9: )
+   $3 = token ')' (1.10: )
+-> $$ = nterm fun_declarator (1.5-10: )
+Stack now 8 0
+Entering state 14
+Reducing stack by rule 7 (line 159):
+-> $$ = nterm $@2 (1.11: )
+Stack now 14 8 0
+Entering state 17
+Reading a token: Next token is token '{' (2.1: )
+Shifting token '{' (2.1: )
+Entering state 24
+Reading a token: Next token is token '}' (4.1: )
+Shifting token '}' (4.1: )
+Entering state 46
+Reducing stack by rule 27 (line 426):
+   $1 = token '{' (2.1: )
+   $2 = token '}' (4.1: )
+-> $$ = nterm compound_statement (2.1-4.1: )
+Stack now 17 14 8 0
+Entering state 25
+Reducing stack by rule 8 (line 158):
+   $1 = nterm type_specifier (1.1-3: )
+   $2 = nterm fun_declarator (1.5-10: )
+   $3 = nterm $@2 (1.11: )
+   $4 = nterm compound_statement (2.1-4.1: )
+-> $$ = nterm function_definition (1.1-4.1: )
+Stack now 0
+Entering state 7
+Reducing stack by rule 2 (line 126):
+   $1 = nterm function_definition (1.1-4.1: )
+-> $$ = nterm translation_unit (1.1-4.1: )
+Stack now 0
+Entering state 5
+Reading a token: Next token is token $end (4.1: )
+Shifting token $end (4.1: )
+Entering state 10
+Cleanup: popping token $end (4.1: )
+Cleanup: popping nterm translation_unit (1.1-4.1: )
